@@ -124,6 +124,55 @@ header {
     width: 100%;
 }
 
+/** Contact Us **/
+#contact {
+    background-color: #000;
+}
+
+#contact input,
+#contact textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 0 !important;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    background: none;
+    border-color: #80bdff;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    color: #fff;
+    transition: none;
+    outline: none;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-transition: none;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: none;
+}
+
+.btn-send {
+    background-color: #202020;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    height: 60px;
+    width: 180px;
+}
+
+.btn-send:hover {
+    color: #fff;
+}
+
+.btn-send:focus {
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    color: #fff;
+    outline: 0;
+}
+
 /** Animations **/
 
 @-webkit-keyframes scroll {
