@@ -125,6 +125,7 @@ header {
 }
 
 /** Contact Us **/
+
 #contact {
     background-color: #000;
 }
@@ -171,6 +172,47 @@ header {
     box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
     color: #fff;
     outline: 0;
+}
+
+/** Footer **/
+
+#footer {
+    background: linear-gradient(
+        89.26359094454074deg,
+        rgba(46, 51, 117, 1) 19.477393617021278%,
+        rgba(46, 50, 116, 1) 19.477393617021278%,
+        rgba(59, 43, 91, 1) 81.55186170212765%
+    );
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.social-footer {
+    display: block;
+    font-size: 16px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.social-footer > li {
+    display: inline-block;
+}
+
+.social-footer > li > a {
+    color: #fff;
+}
+
+.copyright-text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 /** Animations **/
