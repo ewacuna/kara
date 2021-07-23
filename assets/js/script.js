@@ -1,3 +1,54 @@
+/** Navbar Links **/
+
+$('.logo').click(function () {
+    $('html, body').animate(
+        {
+            scrollTop: $('#home').offset().top,
+        },
+        500
+    );
+});
+
+$('.services-link').click(function () {
+    $('html, body').animate(
+        {
+            scrollTop: $('#services').offset().top,
+        },
+        500
+    );
+});
+
+$('.work-link').click(function () {
+    $('html, body').animate(
+        {
+            scrollTop: $('#work').offset().top,
+        },
+        500
+    );
+});
+
+$('.reference-link').click(function () {
+    $('html, body').animate(
+        {
+            scrollTop: $('#reference').offset().top,
+        },
+        500
+    );
+});
+
+$('.contact-link, .get-it-touch-button a').click(function () {
+    $('html, body').animate(
+        {
+            scrollTop: $('#contact').offset().top,
+        },
+        500
+    );
+});
+
+$('.nav-link').click(function () {
+    $('.navbar-collapse').collapse('hide');
+});
+
 /** Brands Slider **/
 
 $('.owl-carousel').owlCarousel({
