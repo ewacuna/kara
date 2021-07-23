@@ -144,6 +144,24 @@ header {
     width: 100%;
 }
 
+/** References **/
+
+.owl-carousel .owl-stage-outer .owl-stage {
+    align-items: flex-end;
+    display: flex;
+}
+
+.brand-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-item img {
+    max-width: 160px;
+}
+
 /** Contact Us **/
 
 #contact {
