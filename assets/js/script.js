@@ -49,9 +49,19 @@ $('.nav-link').click(function () {
     $('.navbar-collapse').collapse('hide');
 });
 
+/** Testimonial Slider **/
+
+$('.reference-carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+    responsive: {
+        0: { items: 1 }
+    },
+});
+
 /** Brands Slider **/
 
-$('.owl-carousel').owlCarousel({
+$('.brands-carousel').owlCarousel({
     loop: true,
     margin: 0,
     autoplay: true,

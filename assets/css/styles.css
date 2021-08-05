@@ -148,6 +148,20 @@ header {
 
 /** References **/
 
+#reference .owl-dots .owl-dot span {
+    background-color: rgba(98, 67, 111, 1);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    height: 20px;
+    margin: 1px;
+    width: 20px;
+    cursor: pointer;
+}
+
+#reference .owl-dots .owl-dot.active span {
+    background-color: rgba(98, 67, 111, 0.4);
+}
+
 .owl-carousel .owl-stage-outer .owl-stage {
     align-items: flex-end;
     display: flex;
@@ -162,6 +176,11 @@ header {
 
 .brand-item img {
     max-width: 160px;
+}
+
+.reference-img {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    max-width: 70%;
 }
 
 /** Contact Us **/
@@ -283,6 +302,13 @@ header {
 
 /** Queries **/
 
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .reference-img {
+        max-width: 100%;
+    }
+}
+
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     /* Header */
@@ -321,6 +347,11 @@ header {
     .social-mobile > li > a {
         color: #fff;
     }
+
+    /* References */
+    .reference-img {
+        max-width: 90%;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -328,6 +359,11 @@ header {
     /* Header */
     .main-title {
         font-size: 3.5rem;
+    }
+
+    /* References */
+    .reference-img {
+        max-width: 100%;
     }
 }
 
