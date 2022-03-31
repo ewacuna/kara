@@ -146,6 +146,11 @@ header {
     background-color: #ebebeb;
 }
 
+.work-img {
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
 /** References **/
 
 #reference .owl-dots .owl-dot span {
@@ -236,12 +241,10 @@ header {
 /** Footer **/
 
 #footer {
-    background: linear-gradient(
-        89.26359094454074deg,
-        rgba(46, 51, 117, 1) 19.477393617021278%,
-        rgba(46, 50, 116, 1) 19.477393617021278%,
-        rgba(59, 43, 91, 1) 81.55186170212765%
-    );
+    background: linear-gradient(89.26359094454074deg,
+            rgba(46, 51, 117, 1) 19.477393617021278%,
+            rgba(46, 50, 116, 1) 19.477393617021278%,
+            rgba(59, 43, 91, 1) 81.55186170212765%);
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -260,11 +263,11 @@ header {
     padding-left: 0;
 }
 
-.social-footer > li {
+.social-footer>li {
     display: inline-block;
 }
 
-.social-footer > li > a {
+.social-footer>li>a {
     color: #fff;
 }
 
@@ -311,6 +314,7 @@ header {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+
     /* Header */
     .navbar-collapse {
         background-color: #202020;
@@ -319,7 +323,7 @@ header {
         width: calc(100% - 72px);
     }
 
-    .navbar-collapse > ul {
+    .navbar-collapse>ul {
         margin: 22px !important;
     }
 
@@ -340,11 +344,11 @@ header {
         padding-left: 0;
     }
 
-    .social-mobile > li {
+    .social-mobile>li {
         display: inline-block;
     }
 
-    .social-mobile > li > a {
+    .social-mobile>li>a {
         color: #fff;
     }
 
@@ -356,6 +360,7 @@ header {
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     /* Header */
     .main-title {
         font-size: 3.5rem;
@@ -369,6 +374,7 @@ header {
 
 /* X-Small devices (portrait phones, less than 576px */
 @media (max-width: 575.98px) {
+
     /* Header */
     .main-title {
         font-size: 2.7rem;
