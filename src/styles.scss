@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 * {
   outline: none;
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 
   &::-webkit-scrollbar {
     background-color: #eff1f5;
@@ -62,7 +62,7 @@ body {
 /** Header **/
 
 header {
-  background-image: url('images/header-bg.jpg');
+  background-image: url("images/header-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -105,7 +105,7 @@ header {
   animation-name: scroll;
   background: #fff;
   border-radius: 4px;
-  content: '';
+  content: "";
   height: 8px;
   margin-left: -4px;
   position: absolute;
@@ -136,7 +136,7 @@ header {
 }
 
 .get-it-touch-button {
-  background-image: url('images/touch-bg.png');
+  background-image: url("images/touch-bg.png");
   font-size: 23px;
   font-weight: 500;
   height: 63px;
@@ -232,6 +232,42 @@ header {
   max-width: 70%;
 }
 
+/** FAQ **/
+
+.faq-accordion {
+  .accordion-item {
+    border: 0;
+    border-bottom: 1px solid #d7d7d7;
+    border-radius: 0;
+  }
+
+  .accordion-button {
+    color: #787878;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 26px 0;
+
+    &:focus {
+      border-color: transparent;
+      box-shadow: none;
+    }
+
+    &:not(.collapsed) {
+      background-color: transparent;
+      color: #4a4a4a;
+      box-shadow: none;
+    }
+  }
+
+  .accordion-body {
+    color: #5f5f5f;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0 0 26px;
+  }
+}
+
 /** Contact Us **/
 
 #contact {
@@ -287,10 +323,10 @@ header {
 
 #footer {
   background: linear-gradient(
-                  89.26359094454074deg,
-                  rgba(46, 51, 117, 1) 19.477393617021278%,
-                  rgba(46, 50, 116, 1) 19.477393617021278%,
-                  rgba(59, 43, 91, 1) 81.55186170212765%
+    89.26359094454074deg,
+    rgba(46, 51, 117, 1) 19.477393617021278%,
+    rgba(46, 50, 116, 1) 19.477393617021278%,
+    rgba(59, 43, 91, 1) 81.55186170212765%
   );
   padding-top: 50px;
   padding-bottom: 50px;
@@ -416,6 +452,18 @@ header {
   /* References */
   .reference-img {
     max-width: 100%;
+  }
+
+  /* FAQ */
+  .faq-accordion {
+    .accordion-button {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    .accordion-body {
+      font-size: 16px;
+    }
   }
 }
 
