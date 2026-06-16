@@ -52,6 +52,26 @@ navLinkElements.forEach((navLinkElement) => {
   });
 });
 
+/** Results Animation **/
+
+const resultsSection = document.querySelector("#results");
+
+if (resultsSection) {
+  const resultsObserver = new IntersectionObserver(
+    ([entry]) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      resultsSection.classList.add("results-visible");
+      resultsObserver.unobserve(resultsSection);
+    },
+    { threshold: 0.35 },
+  );
+
+  resultsObserver.observe(resultsSection);
+}
+
 /** Testimonial Slider **/
 
 const testimonialSlider = tns({
