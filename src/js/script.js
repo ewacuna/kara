@@ -2,53 +2,7 @@ import { tns } from "tiny-slider";
 
 /** Navbar Links **/
 
-function scrollToElement(elementId) {
-  const element = document.getElementById(elementId);
-  if (!element) {
-    return;
-  }
-
-  const scrollTop = element.offsetTop;
-
-  window.scrollTo({
-    top: scrollTop,
-    behavior: "smooth",
-  });
-}
-
-document.querySelectorAll(".logo").forEach((logoElement) => {
-  logoElement.addEventListener("click", () => {
-    scrollToElement("home");
-  });
-});
-
-document.querySelector(".services-link").addEventListener("click", () => {
-  scrollToElement("services");
-});
-
-document.querySelector(".work-link").addEventListener("click", () => {
-  scrollToElement("work");
-});
-
-document.querySelector(".reference-link").addEventListener("click", () => {
-  scrollToElement("reference");
-});
-
-document.querySelector(".faq-link").addEventListener("click", () => {
-  scrollToElement("faq");
-});
-
-document.querySelector(".contact-link").addEventListener("click", () => {
-  scrollToElement("contact");
-});
-
-document
-  .querySelector(".get-it-touch-button a")
-  .addEventListener("click", () => {
-    scrollToElement("contact");
-  });
-
-const navLinkElements = document.querySelectorAll(".nav-link");
+const navLinkElements = document.querySelectorAll(".navbar-nav .nav-link");
 
 navLinkElements.forEach((navLinkElement) => {
   navLinkElement.addEventListener("click", () => {

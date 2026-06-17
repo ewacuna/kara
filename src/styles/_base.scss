@@ -9,18 +9,23 @@
     rgba(59, 43, 91, 1) 81.55186170212765%
   );
   --text-strong: #4a4a4a;
-  --text-muted: #787878;
+  --text-muted: #666666;
   --text-body: #5f5f5f;
   --border-soft: #d7d7d7;
   --surface-soft: #ebebeb;
 }
 
-* {
-  outline: none;
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #f9c74f;
+  outline-offset: 3px;
 }
 
 body {

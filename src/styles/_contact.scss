@@ -47,7 +47,6 @@
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
   color: #fff;
   transition: none;
-  outline: none;
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-transition: none;
   -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
@@ -73,7 +72,6 @@
     border-color: #ffffff;
     box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 20%);
     color: #fff;
-    outline: 0;
   }
 
   &:active,

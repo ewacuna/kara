@@ -1,6 +1,10 @@
 /** Queries **/
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .main-title,
   .main-title + p,
   .section-title,

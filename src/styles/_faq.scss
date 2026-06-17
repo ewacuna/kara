@@ -8,7 +8,7 @@
   }
 
   .accordion-button {
-    color: #787878;
+    color: var(--text-muted);
     font-size: 22px;
     font-weight: 700;
     padding: 26px 0;
@@ -16,6 +16,13 @@
     &:focus {
       border-color: transparent;
       box-shadow: none;
+    }
+
+    &:focus-visible {
+      border-color: transparent;
+      box-shadow: 0 0 0 0.2rem rgb(249 199 79 / 45%);
+      outline: 3px solid #f9c74f;
+      outline-offset: 3px;
     }
 
     &:not(.collapsed) {
