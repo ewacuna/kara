@@ -4,6 +4,10 @@ import { tns } from "tiny-slider";
 
 function scrollToElement(elementId) {
   const element = document.getElementById(elementId);
+  if (!element) {
+    return;
+  }
+
   const scrollTop = element.offsetTop;
 
   window.scrollTo({
@@ -12,8 +16,10 @@ function scrollToElement(elementId) {
   });
 }
 
-document.querySelector(".logo").addEventListener("click", () => {
-  scrollToElement("home");
+document.querySelectorAll(".logo").forEach((logoElement) => {
+  logoElement.addEventListener("click", () => {
+    scrollToElement("home");
+  });
 });
 
 document.querySelector(".services-link").addEventListener("click", () => {
