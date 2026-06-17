@@ -26,7 +26,7 @@ Kara is a responsive digital marketing agency website built with Bootstrap 5, Sa
 
 ### Prerequisites
 
-- Node.js 18 or newer
+- Node.js 24 or newer
 - npm
 
 ### Installation
@@ -82,16 +82,15 @@ Serves the production build locally so you can review it before publishing.
 
 ## Deployment
 
-This project is configured to build into `docs/`, which can be served by GitHub Pages.
+This project deploys to GitHub Pages through the workflow in `.github/workflows/deployment.yml`.
+The workflow builds the site with Node.js 24, uploads the generated `docs/` directory as an
+artifact, and publishes it to Pages when changes land on `main`.
 
-1. Run the production build:
+To verify the production build locally:
 
-   ```bash
-   npm run build
-   ```
-
-2. Commit the updated `docs/` directory.
-3. In the repository settings on GitHub, set Pages to deploy from the `docs/` folder.
+```bash
+npm run build
+```
 
 ## Customization
 
