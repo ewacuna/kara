@@ -52,6 +52,32 @@ navLinkElements.forEach((navLinkElement) => {
   });
 });
 
+/** Section Reveal Animations **/
+
+const animatedSectionElements = document.querySelectorAll(
+  "#services, #work, #results, #reference, #faq, #contact",
+);
+
+if (animatedSectionElements.length > 0) {
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.add("section-visible");
+        sectionObserver.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "0px 0px -12% 0px", threshold: 0.18 },
+  );
+
+  animatedSectionElements.forEach((sectionElement) => {
+    sectionObserver.observe(sectionElement);
+  });
+}
+
 /** Results Animation **/
 
 const resultsSection = document.querySelector("#results");
