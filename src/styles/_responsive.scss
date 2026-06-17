@@ -1,0 +1,141 @@
+/** Queries **/
+
+@media (prefers-reduced-motion: reduce) {
+  .main-title,
+  .main-title + p,
+  .section-title,
+  #services .col-md-6,
+  #work .col-md-6,
+  #reference .container,
+  #reference .brands-carousel-frame,
+  .faq-accordion .accordion-item,
+  #contact .form-container .col-12,
+  #contact .form-container .col-md-6 {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+
+  .service-item,
+  #work .card,
+  #work .card img,
+  .brand-item img,
+  .reference-img,
+  #contact input,
+  #contact textarea,
+  .btn-send {
+    transition: none;
+  }
+
+  .result-item {
+    opacity: 1;
+    transform: none;
+
+    &::before {
+      transform: scaleX(1);
+    }
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  .result-meter span {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .reference-img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* Header */
+  .navbar-collapse {
+    background-color: #202020;
+    position: absolute;
+    top: 82px;
+    width: calc(100% - 24px);
+  }
+
+  .navbar-collapse > ul {
+    margin: 22px !important;
+  }
+
+  .nav-item {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  .navbar-nav li a {
+    margin-left: 0;
+  }
+
+  .social-mobile {
+    display: block;
+    list-style: none;
+    margin: 22px !important;
+    padding-left: 0;
+  }
+
+  .social-mobile > li {
+    display: inline-block;
+  }
+
+  .social-mobile > li > a {
+    color: #fff;
+  }
+
+  /* References */
+  .reference-img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Header */
+  .main-title {
+    font-size: 3.5rem;
+  }
+
+  /* Services */
+  .service-subtitle {
+    font-size: 28px;
+  }
+
+  /* Results */
+  .result-number {
+    font-size: 48px;
+  }
+
+  .result-title {
+    font-size: 26px;
+  }
+
+  /* References */
+  .reference-img {
+    max-width: 100%;
+  }
+
+  /* FAQ */
+  .faq-accordion {
+    .accordion-button {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    .accordion-body {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Header */
+  .main-title {
+    font-size: 2.7rem;
+  }
+}

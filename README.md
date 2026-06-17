@@ -73,29 +73,18 @@ Serves the production build locally so you can review it before publishing.
 ├── src/
 │   ├── images/          # Site images and icons
 │   ├── js/script.js     # Navigation, scroll behavior, and carousels
+│   ├── styles/          # Sass partials organized by page section
 │   ├── index.js         # App entry point
-│   └── styles.scss      # Main Sass stylesheet
+│   └── styles.scss      # Main Sass entry point
 ├── index.html           # Main HTML document
 ├── package.json         # Dependencies and npm scripts
 └── README.md
 ```
 
-## Deployment
-
-This project deploys to GitHub Pages through the workflow in `.github/workflows/deployment.yml`.
-The workflow builds the site with Node.js 24, uploads the generated `docs/` directory as an
-artifact, and publishes it to Pages when changes land on `main`.
-
-To verify the production build locally:
-
-```bash
-npm run build
-```
-
 ## Customization
 
 - Update page content in `index.html`.
-- Update styles in `src/styles.scss`.
+- Update section styles in `src/styles/`; `src/styles.scss` imports the partials in build order.
 - Replace images in `src/images/`.
 - Adjust navigation and carousel behavior in `src/js/script.js`.
 
