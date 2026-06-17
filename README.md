@@ -98,3 +98,7 @@ npm run build
 - Update styles in `src/styles.scss`.
 - Replace images in `src/images/`.
 - Adjust navigation and carousel behavior in `src/js/script.js`.
+
+## License
+
+This project is licensed under the MIT License.
