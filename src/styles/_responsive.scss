@@ -23,7 +23,8 @@
   .service-item,
   #work .card,
   #work .card img,
-  .brand-item img,
+  .brand-card,
+  .brand-mark,
   .reference-img,
   #contact input,
   #contact textarea,
@@ -123,6 +124,15 @@
   /* References */
   .reference-img {
     max-width: 100%;
+  }
+
+  .brands-carousel-title {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .brands-carousel-line {
+    display: none;
   }
 
   /* FAQ */
