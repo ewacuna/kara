@@ -12,6 +12,34 @@ navLinkElements.forEach((navLinkElement) => {
   });
 });
 
+/** Scroll To Top **/
+
+const scrollTopButtonElement = document.querySelector(".scroll-top-button");
+
+if (scrollTopButtonElement) {
+  const shouldReduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  );
+
+  const toggleScrollTopButton = () => {
+    const isVisible = window.scrollY > 500;
+
+    scrollTopButtonElement.classList.toggle("is-visible", isVisible);
+    scrollTopButtonElement.setAttribute("aria-hidden", String(!isVisible));
+    scrollTopButtonElement.tabIndex = isVisible ? 0 : -1;
+  };
+
+  scrollTopButtonElement.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: shouldReduceMotion.matches ? "auto" : "smooth",
+    });
+  });
+
+  toggleScrollTopButton();
+  window.addEventListener("scroll", toggleScrollTopButton, { passive: true });
+}
+
 /** Section Reveal Animations **/
 
 const animatedSectionElements = document.querySelectorAll(

@@ -27,7 +27,8 @@
   .reference-img,
   #contact input,
   #contact textarea,
-  .btn-send {
+  .btn-send,
+  .scroll-top-button {
     transition: none;
   }
 
@@ -141,5 +142,13 @@
   /* Header */
   .main-title {
     font-size: 2.7rem;
+  }
+
+  .scroll-top-button {
+    bottom: 16px;
+    min-height: 42px;
+    min-width: 84px;
+    padding: 0 14px;
+    right: 16px;
   }
 }
