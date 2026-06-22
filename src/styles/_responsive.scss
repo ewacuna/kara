@@ -6,7 +6,9 @@
   }
 
   .main-title,
-  .main-title + p,
+  .hero-eyebrow,
+  .hero-lead,
+  .hero-actions,
   .section-title,
   #services .col-md-6,
   #process .col-md-4,
@@ -106,7 +108,26 @@
 @media (max-width: 767.98px) {
   /* Header */
   .main-title {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 17px;
+  }
+
+  .hero-lead {
+    font-size: 19px;
+  }
+
+  .hero-actions {
+    gap: 12px;
+  }
+
+  .hero-button {
+    font-size: 16px;
+    min-height: 50px;
+    min-width: 154px;
+    padding: 0 18px;
   }
 
   /* Services */
@@ -153,7 +174,34 @@
 @media (max-width: 575.98px) {
   /* Header */
   .main-title {
-    font-size: 2.7rem;
+    font-size: 2.15rem;
+  }
+
+  .hero-content {
+    padding: 0 4px;
+  }
+
+  .hero-eyebrow {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .hero-lead {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 18px;
+  }
+
+  .hero-actions {
+    margin-top: 26px;
+  }
+
+  .hero-button {
+    width: 100%;
+  }
+
+  .hero-button-secondary {
+    display: none;
   }
 
   .scroll-top-button {
