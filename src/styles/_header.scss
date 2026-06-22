@@ -1,17 +1,41 @@
 /** Header **/
 
 header {
-  background-image: url("images/header-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background:
+    linear-gradient(144deg, rgb(76 126 181 / 34%) 0%, rgb(76 126 181 / 0%) 42%),
+    linear-gradient(116deg, #252b68 0%, #2e3375 45%, #3b2b5b 100%);
   height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    background:
+      linear-gradient(rgb(25 24 62 / 12%), rgb(25 24 62 / 38%)),
+      linear-gradient(90deg, rgb(20 18 54 / 18%), transparent 48%, rgb(20 18 54 / 24%));
+    content: "";
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+  }
 
   .header-items {
     align-content: space-between;
     display: flex;
     height: 85vh;
+    position: relative;
+    z-index: 2;
   }
+}
+
+.hero-canvas {
+  height: 100%;
+  inset: 0;
+  opacity: 0.88;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
 }
 
 .navbar-collapse {
