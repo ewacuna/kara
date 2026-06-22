@@ -1,13 +1,13 @@
 # Kara
 
-Kara is a responsive digital marketing agency website built with Bootstrap 5, Sass, Vite, and Tiny Slider. It includes landing-page sections for services, work, results, testimonials, FAQs, and contact information.
+Kara is a responsive digital marketing agency website built with Bootstrap 5, Sass, Vite, and Tiny Slider. It includes landing-page sections for services, process, work, results, testimonials, FAQs, and contact information.
 
 [View live demo](https://ewacuna.github.io/kara/)
 
 ## Features
 
 - Responsive Bootstrap 5 layout
-- Hero, services, work, results, references, FAQ, and contact sections
+- Hero, services, process, work, results, references, FAQ, and contact sections
 - Smooth in-page navigation
 - Mobile navbar collapse behavior
 - Animated results section triggered on scroll

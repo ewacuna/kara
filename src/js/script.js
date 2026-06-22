@@ -43,7 +43,7 @@ if (scrollTopButtonElement) {
 /** Section Reveal Animations **/
 
 const animatedSectionElements = document.querySelectorAll(
-  "#services, #work, #results, #reference, #faq, #contact",
+  "#services, #process, #work, #results, #reference, #faq, #contact",
 );
 
 if (animatedSectionElements.length > 0) {
